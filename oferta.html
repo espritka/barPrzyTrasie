@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <!-- Meta-tags uzywa sie glownie przy wordpress, dlatego sa tutaj dodane,
+    daje przeglądarce exstra informacje, o kontencie jakiego bedziemy uzywac -->
+    <!-- Meta-viewport, kiedy strona bedzie responsywna, to uzywane jest do mobile device-->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Te dane pobiera sobie wordpress -->
+    <link rel="icon" href="favicon.ico">
+    <!-- Mozna dodac ikonke na pasku na gorze strony-->
+
+    <title>Bar Przy Trasie</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <!-- CUstom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <!-- class="site-header" - jest po to, zeby bylo wiadomo ze to jest glowny header na calej stronie i na wszystkich stroniach, zeby bylo wiadomo ze tam jest nawigacja -->
+    <header class="site-header" role="banner">
+
+      <!-- NAVBAR -->
+      <div class="navbar-wrapper">
+
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <!-- navbar-nverse = nawigacja bedzie ciemna z bialymi literami -->
+          <!-- navbar-fixed-top = nawigacja zawsze bedzie na gorze strony -->
+          <!-- role: navigation = bardziej semantyczna konstrukcja, -->
+
+          <div class="container">
+            <!-- container: navbar, normalnie jest full-width, ale dzieki temu zrobi sie na srodku strony -->
+
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" >
+                <!-- Kiedy strona sie zmniejszy, to zamiast normalnej nawigacji, zrobi sie taki maly sandwich button po prawej stroine
+                Pozostale rzeczy, to są po prostu rzeczy z bootstrapa, wystraczy skopiować je ze strony jak zapomnisz
+                data-target=".navbar-collapse" = to mowi html ze ma szukac takiego diva, i jesli klikne na  toggle navigation button, to rozwinie mi jego zawartosc potem-->
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <!-- Sr-Only = kiedy bede ogladac strone na screenreadarze, to pojawi sie text ktory pozwoli mi otworzyc nawigacje
+                icon-bar = to powoduje te trzy kreski w sandwichu-->
+              </button>
+              <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt="Bar przy trasie"></a>
+              <!-- navbar-brand = to spowoduje, ze logo (lub nazwa firmy) bedzie sie wyswietlac z lewej strony, takie align-left-->
+            </div><!-- navbar-header -->
+            <div class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#">O Firmie</a></li>
+                <!-- active = powoduje, ze dana zakladka jest wytluszczona, jesli aktualnie sie na niej znajduje -->
+                <li><a href="oferta.html">Oferta</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+              </ul><!-- nav -->
+            </div><!-- navbar-collapse -->
+          </div><!-- container -->
+        </div><!-- navbar -->
+      </div><!-- navbar wrapper -->
+
+    </header>
+
+
+
+      
+    <!-- FOOTER -->
+    <footer>
+      <div class="container">
+        <div class="col-sm-3">
+          <p><a href="#"><img src="assets/img/logo.png" alt="Bar przy trasie"></a></p>
+        </div><!-- col -->
+        <div class="col-sm-6">
+          <nav>
+            <ul class="list-unstyled list-inline">
+              <li><a href="index.html">O Firmie</a></li>
+              <li><a href="#Oferta">Oferta</a></li>
+              <li><a href="#Kontakt">Kontakt</a></li>
+            </ul>
+          </nav>
+        </div><!-- col -->
+        <div class="col-sm-3">
+          <p class="pull-right">&copy; Kasia Lew</p>
+        </div>
+      </div><!-- container -->
+    </footer>
+
+
+    <!-- BOOTSTRAP CORE JAVASCRIPT -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+  </body>
+</html>
